@@ -6,13 +6,18 @@
     padding-top: 40px;
     padding-left: 40px;
     padding-right: 40px;
-    min-width: 528px;
-    min-height: 581px;
+    min-width: 450px;
+    min-height: 609px;
     background-color: $primary-bg-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
     transition: transform 250ms $timing-function;
+
+    @media screen and (min-width: 768px) {
+        min-width: 528px;
+        min-height: 581px;
+    }
 }
 
 .modal__close {
@@ -59,13 +64,17 @@
 .modal__text {
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     margin: 0;
     margin-bottom: 12px;
     color: $title-text-color;
     text-transform: none;
+
+    @media screen and (min-width: 1200px) {
+        line-height: 1.15;
+    }
 }
 
 .modal__form {

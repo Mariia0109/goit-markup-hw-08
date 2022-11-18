@@ -19,12 +19,11 @@
 }
 
 .footer__all {
-    padding-bottom: 60px;
 
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
-        
+        justify-content: space-around;
     }
         @media screen and (min-width: 1200px) {
             flex-wrap: nowrap;
@@ -114,8 +113,11 @@
     color: $primary-bg-color;
     padding-top: 12px;
     padding-bottom: 20px;
-    align-items: center;
+    text-align: center;
 
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+    }
 }
 
 .footer__list {
@@ -176,8 +178,7 @@
     @media screen and (min-width: 768px) {
         align-items: center;
         justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
+        
     }
 
         @media screen and (min-width: 1200px) {
@@ -253,7 +254,8 @@
 
     @media screen and (min-width: 768px) {
         display: block;
-        margin-right: 0;
+        margin-right: auto;
+        margin-left: auto;
         
     }
 

@@ -1,5 +1,12 @@
 header {
     border-bottom: 1px solid #ececec;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    @media (min-width: 768px) {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 }
 
 header .container {
@@ -10,6 +17,7 @@ header .container {
 .header__nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .header__menu {
@@ -78,17 +86,33 @@ header .container {
 
     @media (min-width: 768px) {
         display: block;
+        padding-top: 21px;
+        padding-bottom: 21px;
     }
 
     @media (min-width: 1200px) {
         display: flex;
         gap: 30px;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
 
 .header__info {
     margin: 0;
     padding: 0;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 10px;
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 0;
+    }
 }
 
 .header__send {
@@ -97,15 +121,14 @@ header .container {
     color: $primary-text-color;
     text-decoration: none;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
 
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: $timing-function;
     align-items: center;
-    padding: 10px;
 
     &:hover,
     &:focus {
@@ -115,6 +138,8 @@ header .container {
     @media screen and (min-width: 1200px) {
         padding-top: 32px;
         padding-bottom: 32px;
+        font-size: 14px;
+        line-height: 1.14;
     }
 }
 
@@ -132,12 +157,11 @@ header .container {
 }
 
 .header__burger-menu {
-    position: fixed;
     border: none;
     background-color: $primary-bg-color;
-    margin-left: 276px;
+    margin-left: auto;
+
     @media (min-width: 768px) {
         display: none;
-        }
+    }
 }
-
