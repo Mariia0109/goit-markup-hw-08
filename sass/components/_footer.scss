@@ -105,18 +105,19 @@
 .footer__text {
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.14px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 20px;
     color: $primary-bg-color;
-    padding-top: 12px;
-    padding-bottom: 20px;
+    
     text-align: center;
 
     @media screen and (min-width: 1200px) {
         text-align: start;
+        padding-top: 12px;
+        padding-bottom: 20px;
     }
 }
 
@@ -156,11 +157,11 @@
 }
 
 .footer__send {
-    height: 80px;
+    
 
     @media screen and (min-width: 768px) {
         display: block;
-        height: 86px;
+        
     }
 
         @media screen and (min-width: 1200px) {

@@ -64,14 +64,18 @@ h1 {
     display: block;
     color: $title-text-color;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
     letter-spacing: 0.03em;
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-align: center;
 
-    
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        line-height: 1.17;
+        margin-bottom: 50px;
+    }
 }
 
 .overlay {
@@ -117,4 +121,10 @@ h1 {
             background-image: url(../images/fon@2x.jpg);
             }
     }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
